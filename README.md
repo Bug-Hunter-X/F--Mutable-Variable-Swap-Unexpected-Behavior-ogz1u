@@ -1,0 +1,3 @@
+# F# Mutable Variable Swap Unexpected Behavior
+
+This example demonstrates unexpected behavior when swapping mutable variables in F#.  In many languages, the `swap` function would seem to correctly swap the values of `x` and `y`. However, because F# uses value semantics by default for function arguments, the mutable values are passed by value and not reference.  This means, the swap function acts on local copies of the variables, and not the original variables in the main scope.
